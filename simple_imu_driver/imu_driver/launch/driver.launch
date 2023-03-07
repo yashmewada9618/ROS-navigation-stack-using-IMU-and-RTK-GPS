@@ -1,0 +1,6 @@
+<launch>
+    <arg name="port" default="None"/>
+    <param name="port" value="$(arg port)"/>
+    <node name="imu_driver" pkg="imu_driver" type="driver.py" output="screen">
+    </node>
+</launch>
